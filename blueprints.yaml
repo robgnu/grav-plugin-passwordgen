@@ -1,0 +1,38 @@
+name: PasswordGen
+version: 0.1.0
+description: Generates passwords
+icon: server
+author:
+  name: RobGnu
+  email: rob@gmx.de
+  url: https://github.com/robgnu/
+homepage: https://github.com/robgnu/grav-plugin-passwordgen
+keywords: plugin, passwords, generate
+bugs: https://github.com/robgnu/grav-plugin-passwordgen/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    built_in_css:
+      type: toggle
+      label: Use built in CSS
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
