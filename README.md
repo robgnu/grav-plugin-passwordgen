@@ -18,10 +18,12 @@ This plugin offers a simply way to create passwords on your website. You can use
 * Navigate to the Plugin-Settings in your Admin-Panel and enable Passwordgen.
 * Navigate to your page where the password(s) should appear.
 * Edit the frontmatter of your page and set these options:
-```process:
+```
+process:
     markdown: true
     twig: true
- cache_enable: false```
+ cache_enable: false
+```
 * Edit the page content and set this code at your preferred position:
  `{{ passwordgen(12, true, 5) }}`
 * Visit your Page and you will see your first passwords.
