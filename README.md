@@ -1,10 +1,10 @@
 # Passwordgen Plugin
 
-The **Passwordgen** Plugin is for [Grav CMS](http://github.com/getgrav/grav).  This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.
+The **Passwordgen** Plugin is for [Grav CMS](http://github.com/getgrav/grav).
 
 ## Description
 
-This plugin offers a simply way to create passwords on your website. You can use it as a service for your clients to create proper passwords (I do so). This plugin respects the privacy of your visitors an does **not** save the created passwords. You should provide a secure TLS connection (https) for your visitors. To create passwords, this plugin uses the *pwgen* tool which is part of the most distributions. If pwgen is not available or allowed to run on server, it falls back to backup function.
+This plugin offers a simply way to create passwords on your website. You can use it as a service for your clients to create proper passwords (I do so). This plugin respects the privacy of your visitors and does **not** save the created passwords. You should provide a secure TLS connection (https) for your visitors. To create passwords, this plugin uses the *pwgen* tool which is part of the most distributions. If pwgen is not available or allowed to run on server, it falls back to a backup function and creates the passwords by itself.
 
 ## Features
 
@@ -20,9 +20,9 @@ This plugin offers a simply way to create passwords on your website. You can use
 * Edit the frontmatter of your page and set these options:
 ```
 process:
-    markdown: true
-    twig: true
- cache_enable: false
+  markdown: true
+  twig: true
+cache_enable: false
 ```
 * Edit the page content and set this code at your preferred position:
  `{{ passwordgen(12, true, 5) }}`
