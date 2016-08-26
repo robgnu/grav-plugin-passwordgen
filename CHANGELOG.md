@@ -1,3 +1,9 @@
+# v0.1.2
+##  08/26/2016
+
+1. [](#improved)
+    * Corrections to the blueprint (versioning)
+
 # v0.1.1
 ##  08/25/2016
 
