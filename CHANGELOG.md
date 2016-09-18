@@ -1,3 +1,9 @@
+# v0.1.3
+##  09/18/2016
+
+1. [](#bugfix)
+    * Better character escaping to avoid broken HTML code.
+
 # v0.1.2
 ##  08/26/2016
 

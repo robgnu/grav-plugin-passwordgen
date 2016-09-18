@@ -23,7 +23,7 @@ class passwordgenTwigExtension extends \Twig_Extension
       }
       for ($i=0; $i<$pwCount; $i++) {
         $htmlOut .= "<span class=\"passwordgen-password\">".
-                      $this->rgPasswordGenerator($pwLen, $specialChars)
+                      htmlentities($this->rgPasswordGenerator($pwLen, $specialChars))
                     ."</span>";
       }
       $htmlOut .= "</div>";
