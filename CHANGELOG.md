@@ -3,6 +3,8 @@
 
 1. [](#bugfix)
     * Optimize HTML code output.
+2. [](#improved)
+    * New icon and better description.
 
 # v0.1.3
 ##  09/18/2016

@@ -1,7 +1,7 @@
 name: PasswordGen
 version: 0.1.4
-description: Generates passwords
-icon: server
+description: Generates passwords visible on your Webpage.
+icon: keyboard-o
 author:
   name: RobGnu
   email: rob@gmx.de
