@@ -17,19 +17,19 @@ class passwordgenTwigExtension extends \Twig_Extension
       $pwLen = $this->inputFilterInteger($pwLen);
       $specialChars = $this->inputFilterBoolean($specialChars);
       $pwCount = $this->inputFilterInteger($pwCount);
-      $htmlOut = "<div id=\"passwordgen\">";
+      $htmlOut = "<div id=\"passwordgen\">\n";
       if ($pwLen === false || $pwCount === false) {
         return (string) "Plugin-Error: wrong parameters.";
       }
       for ($i=0; $i<$pwCount; $i++) {
         $htmlOut .= "<span class=\"passwordgen-password\">".
                       htmlentities($this->rgPasswordGenerator($pwLen, $specialChars))
-                    ."</span>";
+                    ."</span>\n";
       }
       $htmlOut .= "</div>";
       return (string) $htmlOut;
     }
-    
+
     protected function rgPasswordGenerator($pwLen=8, $specialChars=false) {
       $pwLen = $this->inputFilterInteger($pwLen);
       $specialChars = $this->inputFilterBoolean($specialChars);
@@ -62,16 +62,16 @@ class passwordgenTwigExtension extends \Twig_Extension
       }
       return (string) trim(substr($code, 0, $pwLen));
     }
-    
+
     protected function inputFilterInteger($in) {
       $wert = filter_var($in, FILTER_VALIDATE_INT);
       if ($wert === NULL || $wert === false) {
         return (bool)false;
       } else {
         return (int)$wert;
-      } 
+      }
     }
-    
+
     protected function inputFilterBoolean($in) {
       $wert = filter_var($in, FILTER_VALIDATE_BOOLEAN);
       if ($wert === NULL || $wert === false) {

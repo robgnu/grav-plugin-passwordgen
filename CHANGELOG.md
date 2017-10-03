@@ -1,3 +1,9 @@
+# v0.1.4
+##  10/03/2017
+
+1. [](#bugfix)
+    * Optimize HTML code output.
+
 # v0.1.3
 ##  09/18/2016
 
